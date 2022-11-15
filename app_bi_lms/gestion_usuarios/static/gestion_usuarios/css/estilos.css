@@ -1,0 +1,32 @@
+    body {
+        display: flex;
+        flex-direction: row;
+    }
+    /* Barra izquierda */
+    
+    #sidebar {
+        background-color: orangered;
+        width: 15vw;
+        height: 100vh;
+    }
+    /* Barra derecha */
+    
+    #main {
+        background-color: yellow;
+        width: 85vw;
+        height: 100vh;
+    }
+    /* Bloque superior */
+    
+    #superior {
+        background-color: white;
+        width: 100vw;
+        height: 10vh;
+    }
+    /* Bloque de contenido */
+    
+    #contenedor {
+        background-color: aqua;
+        width: 100vw;
+        height: 90vh;
+    }
