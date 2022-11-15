@@ -5,15 +5,15 @@
     /* Barra izquierda */
     
     #sidebar {
-        background-color: orangered;
-        width: 15vw;
+        background-color: orange;
+        width: 25%;
         height: 100vh;
     }
     /* Barra derecha */
     
     #main {
         background-color: yellow;
-        width: 85vw;
+        width: 75%;
         height: 100vh;
     }
     /* Bloque superior */
@@ -29,4 +29,28 @@
         background-color: aqua;
         width: 100vw;
         height: 90vh;
+    }
+    
+    #flecha_derecha {
+        width: 25px;
+        height: auto;
+        visibility: hidden;
+    }
+    
+    #flecha_izquierda {
+        width: 25px;
+        height: auto;
+    }
+    
+    #flechas {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    #linkitos {
+        text-decoration: none;
+    }
+    
+    #li_menu {
+        list-style: none;
     }

@@ -17,16 +17,62 @@
 
 </head>
 
+
 <body>
 
     <div id="sidebar">
-        hola
+        <div id="flechas">
+            <img id="flecha_derecha" src=" {% static 'gestion_usuarios/imagenes/avance-rapido.png' %} " alt="expandir menu ">
+            <img id="flecha_izquierda" src=" {% static 'gestion_usuarios/imagenes/retroceso-rapido.png' %} " alt="contraer menu ">
+        </div>
+        <ul id="linkitos_ul">
+            <ul>
+                <li id="li_menu">
+                    <a id="linkitos" href="{% url 'Home' %} ">Home</a></li>
+            </ul>
+            <ul>
+                <li id="li_menu">
+                    <a id="linkitos" href="{% url 'Formacion' %} ">Mi formación</a>
+                    <ul>
+                        <li id="li_menu">Mis cursos</li>
+                        <li id="li_menu">Mis diplomas</li>
+                    </ul>
+
+                </li>
+            </ul>
+            <ul>
+                <li id="li_menu">
+                    <a id="linkitos" href="{% url 'Mensajeria' %} ">Mensajeria
+                <ul>
+                    <li id="li_menu">1</li>
+                    <li id="li_menu">2</li>
+                </ul>
+
+            </li>
+        </ul>
+        <ul>
+            <li id="li_menu"><a id="linkitos" href="{% url 'Actividad' %} ">Mi actividad</a>
+                    <ul>
+                        <li id="li_menu">KPI´s
+                            <ul>
+                                <li id="li_menu">Bp´s</li>
+                                <li id="li_menu">Puntuaciones</li>
+                            </ul>
+                        </li>
+                        <li id="li_menu">Ranking</li>
+                    </ul>
+
+                </li>
+            </ul>
+        </ul>
     </div>
     <div id="main">
-        <div id="superior"></div>
-        <div id="contenedor"></div>
+        <div id="superior">hola</div>
+        <div id="contenedor">adios {% block contenido %} {% endblock %}
+        </div>
     </div>
-
+    <script src="{% static 'gestion_usuarios/js/funciones.js' %} ">
+    </script>
 </body>
 
 </html>
