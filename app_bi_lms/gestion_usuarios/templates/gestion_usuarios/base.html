@@ -14,7 +14,6 @@
 
     <!-- Custom styles for this template-->
     <link href="{% static 'gestion_usuarios/css/estilos.css' %}" rel="stylesheet">
-
 </head>
 
 
@@ -57,8 +56,11 @@
     <div id="contenido">
         <div id="nav">
             <ul id="menu">
-                <li id="mensajeria">
-                    <a href="">Mensajeria</a><img src=" {% static 'gestion_usuarios/imagenes/flecha-hacia-abajo-para-navegar.png' %} " alt=" " srcset=" ">
+                <li class="iconos_menu">
+                    <a href=""><img src=" {% static 'gestion_usuarios/imagenes/icons8-página-principal-50.png' %} " alt=" " srcset=" ">Inicio</a>
+                </li>
+                <li id="mensajeria" class="iconos_menu">
+                    <a href=""><img src=" {% static 'gestion_usuarios/imagenes/icons8-mensaje-relleno-50.png' %} " alt=" " srcset=" ">Mensajeria</a><img src=" {% static 'gestion_usuarios/imagenes/flecha-hacia-abajo-para-navegar.png' %} " alt=" " srcset=" ">
                     <ul>
                         <li>
                             <a href="">Mensajeria 1</a></li>
@@ -68,8 +70,8 @@
                         <li><a href=""> Mensajeria 3</a></li>
                     </ul>
                 </li>
-                <li id="mensajeria">
-                    <a href="">Formación</a><img src=" {% static 'gestion_usuarios/imagenes/flecha-hacia-abajo-para-navegar.png' %} " alt=" " srcset=" ">
+                <li id="mensajeria" class="iconos_menu">
+                    <a href=""><img src=" {% static 'gestion_usuarios/imagenes/icons8-aprendizaje-50.png' %} " alt=" " srcset=" ">Formación</a><img src=" {% static 'gestion_usuarios/imagenes/flecha-hacia-abajo-para-navegar.png' %} " alt=" " srcset=" ">
                     <ul>
                         <li>
                             <a href="">Formación 1</a> </li>
@@ -78,7 +80,10 @@
 
                     </ul>
                 </li>
-                <li id="mensajeria">Actividad</li>
+                <li id="mensajeria" class="iconos_menu">
+                    <a href=""><img src=" {% static 'gestion_usuarios/imagenes/icons8-graph-60.png' %} " alt=" " srcset=" ">Actividad</a>
+                </li>
+
             </ul>
         </div>
         <div id="main">

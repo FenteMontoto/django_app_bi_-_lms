@@ -41,3 +41,7 @@ class Formacion(models.Model):
     fecha_inicio_curso=models.DateField()
     fecha_finalizacion_curso=models.DateField()
     estado_curso=models.CharField(max_length=20,verbose_name="Estado")
+    
+
+ 
+    
