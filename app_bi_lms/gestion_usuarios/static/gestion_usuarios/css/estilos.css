@@ -1,56 +1,96 @@
     body {
         display: flex;
+        flex-direction: column;
+    }
+    
+    #inicial {
+        display: flex;
+        justify-content: space-between;
+        width: 22%;
+    }
+    
+    #header {
+        display: flex;
+        flex-direction: row;
+        height: 12%;
+        justify-content: space-between;
+        background-color: bisque;
+    }
+    
+    #footer {
+        position: absolute;
+        bottom: 0;
+    }
+    
+    #show_menu>img {
+        width: 20px;
+    }
+    
+    #contenido {
+        margin: 0;
+        display: flex;
         flex-direction: row;
     }
-    /* Barra izquierda */
     
-    #sidebar {
-        background-color: orange;
-        width: 25%;
-        height: 100vh;
-    }
-    /* Barra derecha */
-    
-    #main {
-        background-color: yellow;
-        width: 75%;
-        height: 100vh;
-    }
-    /* Bloque superior */
-    
-    #superior {
-        background-color: white;
-        width: 100vw;
-        height: 10vh;
-    }
-    /* Bloque de contenido */
-    
-    #contenedor {
-        background-color: aqua;
-        width: 100vw;
-        height: 90vh;
+    #nav {
+        margin: 0;
+        width: 22%;
     }
     
-    #flecha_derecha {
-        width: 25px;
-        height: auto;
-        visibility: hidden;
+    #menu {
+        margin: 0;
+        list-style: none;
+        padding: 0;
+        margin-left: 5%;
     }
     
-    #flecha_izquierda {
-        width: 25px;
-        height: auto;
+    #menu>li {
+        padding-top: 8%;
     }
     
-    #flechas {
-        display: flex;
-        justify-content: flex-end;
+    #menu>li>img {
+        text-align: center;
+        vertical-align: middle;
+        padding-left: 3%;
     }
     
-    #linkitos {
+    #menu>li>a {
+        text-align: center;
+        vertical-align: middle;
         text-decoration: none;
     }
     
-    #li_menu {
+    #menu>li>ul {
+        display: none;
+    }
+    
+    #menu li:hover>ul {
+        display: block;
         list-style: none;
+        padding: 10px 15px;
+    }
+    
+    #user {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #user>div>img {
+        width: 20px;
+        vertical-align: middle;
+    }
+    
+    #user>div {
+        padding-right: 10px;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    #cerrar {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #cerrar>a {
+        text-decoration: none;
     }

@@ -19,58 +19,53 @@
 
 
 <body>
-
-    <div id="sidebar">
-        <div id="flechas">
-            <img id="flecha_derecha" src=" {% static 'gestion_usuarios/imagenes/avance-rapido.png' %} " alt="expandir menu ">
-            <img id="flecha_izquierda" src=" {% static 'gestion_usuarios/imagenes/retroceso-rapido.png' %} " alt="contraer menu ">
+    <div id="header">
+        <div id="inicial">
+            <div id="logo">logo</div>
+            <div id="show_menu">
+                <img src=" {% static 'gestion_usuarios/imagenes/menu.png' %} " alt=" " srcset=" "></div>
         </div>
-        <ul id="linkitos_ul">
-            <ul>
-                <li id="li_menu">
-                    <a id="linkitos" href="{% url 'Home' %} ">Home</a></li>
-            </ul>
-            <ul>
-                <li id="li_menu">
-                    <a id="linkitos" href="{% url 'Formacion' %} ">Mi formación</a>
-                    <ul>
-                        <li id="li_menu">Mis cursos</li>
-                        <li id="li_menu">Mis diplomas</li>
-                    </ul>
-
-                </li>
-            </ul>
-            <ul>
-                <li id="li_menu">
-                    <a id="linkitos" href="{% url 'Mensajeria' %} ">Mensajeria
-                <ul>
-                    <li id="li_menu">1</li>
-                    <li id="li_menu">2</li>
-                </ul>
-
-            </li>
-        </ul>
-        <ul>
-            <li id="li_menu"><a id="linkitos" href="{% url 'Actividad' %} ">Mi actividad</a>
-                    <ul>
-                        <li id="li_menu">KPI´s
-                            <ul>
-                                <li id="li_menu">Bp´s</li>
-                                <li id="li_menu">Puntuaciones</li>
-                            </ul>
-                        </li>
-                        <li id="li_menu">Ranking</li>
-                    </ul>
-
-                </li>
-            </ul>
-        </ul>
-    </div>
-    <div id="main">
-        <div id="superior">hola</div>
-        <div id="contenedor">adios {% block contenido %} {% endblock %}
+        <div id="user">
+            <div id="avisos"><img src=" {% static 'gestion_usuarios/imagenes/campana.png' %} " alt=" " srcset=" "></div>
+            <div><img src=" {% static 'gestion_usuarios/imagenes/comentario.png' %} " alt=" " srcset=" "></div>
+            <div><img src=" {% static 'gestion_usuarios/imagenes/usuario.png' %} " alt=" " srcset=" "></div>
+            <div>usuario</div>
+            <div id="cerrar">
+                <img src=" {% static 'gestion_usuarios/imagenes/cerrar-sesion.png' %} " alt=" " srcset=" "><a href="">Cerrar sesion</a></div>
         </div>
+
+
     </div>
+    <div id="contenido">
+        <div id="nav">
+            <ul id="menu">
+                <li id="mensajeria">
+                    <a href="">Mensajeria</a><img src=" {% static 'gestion_usuarios/imagenes/flecha-hacia-abajo-para-navegar.png' %} " alt=" " srcset=" ">
+                    <ul>
+                        <li>Mensajeria 1</li>
+                        <li>Mensajeria 2</li>
+                        <li>Mensajeria 3</li>
+
+                    </ul>
+                </li>
+                <li id="mensajeria">
+                    <a href="">Formación</a><img src=" {% static 'gestion_usuarios/imagenes/flecha-hacia-abajo-para-navegar.png' %} " alt=" " srcset=" ">
+                    <ul>
+                        <li>Formación 1</li>
+                        <li>Formación 2</li>
+                        <li>Formación 3</li>
+
+                    </ul>
+                </li>
+                <li id="mensajeria">Actividad</li>
+            </ul>
+        </div>
+        <div id="main">
+            contenido
+        </div>
+        <div id="aside">aside</div>
+    </div>
+    <div id="footer">pie</div>
     <script src="{% static 'gestion_usuarios/js/funciones.js' %} ">
     </script>
 </body>
