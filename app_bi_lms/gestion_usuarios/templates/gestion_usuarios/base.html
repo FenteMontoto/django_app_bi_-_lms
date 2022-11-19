@@ -26,12 +26,30 @@
                 <img src=" {% static 'gestion_usuarios/imagenes/menu.png' %} " alt=" " srcset=" "></div>
         </div>
         <div id="user">
-            <div id="avisos"><img src=" {% static 'gestion_usuarios/imagenes/campana.png' %} " alt=" " srcset=" "></div>
-            <div><img src=" {% static 'gestion_usuarios/imagenes/comentario.png' %} " alt=" " srcset=" "></div>
-            <div><img src=" {% static 'gestion_usuarios/imagenes/usuario.png' %} " alt=" " srcset=" "></div>
+            <div id="pater_avisos">
+                <div id="avisos">
+                    <a href=""><img src=" {% static 'gestion_usuarios/imagenes/campana.png' %} " alt=" " srcset=" ">
+                    </a>
+                </div>
+                <div id="burbuja_aviso">1</div>
+            </div>
+            <div id="pater_mensajes">
+                <div id="uno">
+                    <a href=""><img src=" {% static 'gestion_usuarios/imagenes/comentario.png' %} " alt=" " srcset=" "></a>
+                </div>
+                <div id="burbuja_mensaje">1</div>
+            </div>
+
+            <div>
+                <a href=""><img src=" {% static 'gestion_usuarios/imagenes/usuario.png' %} " alt=" " srcset=" ">
+                </a>
+            </div>
             <div>usuario</div>
+
             <div id="cerrar">
-                <img src=" {% static 'gestion_usuarios/imagenes/cerrar-sesion.png' %} " alt=" " srcset=" "><a href="">Cerrar sesion</a></div>
+                <a href=""><img src=" {% static 'gestion_usuarios/imagenes/cerrar-sesion.png' %} " alt=" " srcset=" ">
+                </a>
+            </div>
         </div>
 
 
@@ -42,18 +60,21 @@
                 <li id="mensajeria">
                     <a href="">Mensajeria</a><img src=" {% static 'gestion_usuarios/imagenes/flecha-hacia-abajo-para-navegar.png' %} " alt=" " srcset=" ">
                     <ul>
-                        <li>Mensajeria 1</li>
-                        <li>Mensajeria 2</li>
-                        <li>Mensajeria 3</li>
-
+                        <li>
+                            <a href="">Mensajeria 1</a></li>
+                        <li>
+                            <a href=""> Mensajeria 2</a>
+                        </li>
+                        <li><a href=""> Mensajeria 3</a></li>
                     </ul>
                 </li>
                 <li id="mensajeria">
                     <a href="">Formación</a><img src=" {% static 'gestion_usuarios/imagenes/flecha-hacia-abajo-para-navegar.png' %} " alt=" " srcset=" ">
                     <ul>
-                        <li>Formación 1</li>
-                        <li>Formación 2</li>
-                        <li>Formación 3</li>
+                        <li>
+                            <a href="">Formación 1</a> </li>
+                        <li><a href="">Formación 2</a></li>
+                        <li><a href="">Formación 3</a></li>
 
                     </ul>
                 </li>
